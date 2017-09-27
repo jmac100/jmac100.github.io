@@ -79,7 +79,7 @@ nav
         text-decoration: underline
 
 .open
-    height: 254px !important
+    height: 306px !important
 
 .container    
     width: 60vw
@@ -182,7 +182,7 @@ nav
 footer
     padding: 1.2em
     text-align: center
-    background: $dark
+    background: $darker
     color: $light
     opacity: .9
     p
@@ -199,8 +199,6 @@ footer
 .testimonials
     h1
         +header
-        
-    padding-bottom: 10em
 
     .testimonial-container 
         min-height: 200px
@@ -230,3 +228,49 @@ footer
             display: grid
             grid-template-columns: repeat(3, 1fr)
             grid-gap: 2em
+
+.contact
+    h1
+        +header
+    padding-bottom: 10em
+
+    form
+        width: 100%
+    .form-group
+        margin-bottom: 1rem
+    label
+        display: inline-block
+        margin-bottom: .5rem
+    .form-control
+        display: block
+        width: 100%
+        padding: .5rem .75rem
+        font-size: 1rem
+        line-height: 1.25
+        color: #464a4c
+        background-color: #fff
+        border: 1px solid rgba(0,0,0,.15)
+        border-radius: .25rem
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s
+    button
+        padding: 1em
+        border: 1px solid #c9e6ff
+        background: transparent
+        text-transform: uppercase
+        cursor: pointer
+        float: right
+        &:hover
+            background: #92bed7
+            color: #fff
+            outline: 0
+            transition: background-color 1s ease-out
+        &:focus
+            background: #92bed7
+            color: #fff
+            outline: 0
+            transition: background-color 1s ease-out
+    .contact-grid-container
+        display: flex
+        justify-content: center
+        .contact-container
+            width: 80%
